@@ -1,0 +1,29 @@
+package fc.java.part2;
+
+public class GuGuDanTest {
+    public static void main(String[] args) {
+
+        // Q. 이중 반복문을 이용하여 아래와 같은 구구단(9X9)을 출력하세요.
+        for (int i=2;i<=9;i++){
+            System.out.print(i + "단" + "\t\t");
+        }
+        System.out.println();
+
+        // 2 X 1 = 2    3 X 1 = 3   4 X 1 = 4   ~   9 X 1 = 9
+        for (int i=1;i<=1;i++){
+             for (int j=2;j<=9;j++){
+                System.out.print(j + " X " + i + " = " + (j*i) + "\t");
+            }
+        }
+        System.out.println();
+
+        // 2 X 1 = 2    3 X 1 = 3   4 X 1 = 4   ~   9 X 1 = 9
+        for (int i=1;i<=9;i++){
+            for (int j=2;j<=9;j++){
+                System.out.print(j + " X " + i + " = " + (j*i) + "\t");
+            }
+            System.out.println();
+        }
+
+    }
+}
